@@ -26,4 +26,12 @@ npm install
 
 - Then start developing the Restful APIs
 
+### How to test POST or PUT methods?
+
+- By using any HTTP client like https://www.postman.com/
+- Like in the image below
+
+![postman](https://user-images.githubusercontent.com/75551401/146683501-020bc95a-9771-4927-90d5-3c1a14f1fe1b.png)
+
+
 Happy coding :)
