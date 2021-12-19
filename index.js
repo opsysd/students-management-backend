@@ -10,7 +10,7 @@ app.use(cors());
 
 const port = 3000;
 
-app.get('/', async function (req, res) {
+app.get('/api/students', async function (req, res) {
     let connection = await pool.getConnection();
     let sql = "SELECT * FROM students";
     let result = await connection.query(sql);
@@ -18,7 +18,7 @@ app.get('/', async function (req, res) {
     res.json(result);
 });
 
-app.get('/:id', async function (req, res) {
+app.get('/api/students/:id', async function (req, res) {
     let connection = await pool.getConnection();
     let sql = "SELECT * FROM students WHERE ID=" + req.params.id;
     let result = await connection.query(sql)
@@ -27,7 +27,7 @@ app.get('/:id', async function (req, res) {
 });
 
 
-app.post('/', async function (req, res) {
+app.post('/api/students', async function (req, res) {
     let connection = await pool.getConnection();
     let data = req.body;
 
