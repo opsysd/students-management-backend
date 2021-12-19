@@ -45,7 +45,9 @@ app.post('/api/students', async function (req, res) {
     res.json("success");
 });
 
+// Write down the Login admin with username and password, Update and Delete sudent APIs
 
+// run application on port 3000
 app.listen(port);
 
 console.log('listening on http://localhost:' + port);
