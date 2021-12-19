@@ -2,7 +2,6 @@ const express = require('express');
 const pool = require('./db_config');
 const cors = require("cors");
 const bodyParser = require('body-parser');
-// const router = require('express').Router();
 
 const app = express();
 
