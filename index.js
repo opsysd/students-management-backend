@@ -41,7 +41,7 @@ app.post('/api/students', async function (req, res) {
         data['grade']
     ];
     let result = await connection.query(sql, values);
-    console.log(result);
+    connection.end();
     res.json("success");
 });
 
